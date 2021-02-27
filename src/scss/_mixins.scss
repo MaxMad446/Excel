@@ -7,15 +7,15 @@
   display: inline-block;
   color: rgba(0, 0, 0, .7);
 
-  & i{
-      font-size: 18px;
+  & i {
+    font-size: 18px;
   }
 
-  &:active, &.active{
+  &:active, &.active {
     color: $color;
   }
 
-  &:hover{
+  &:hover {
     background: #eee;
     cursor: pointer;
   }

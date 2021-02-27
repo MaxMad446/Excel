@@ -3,7 +3,7 @@
 
 .db {
 
-  .db_header{
+  &__header {
     position: fixed;
     left: 0;
     right: 0;
@@ -17,13 +17,13 @@
     z-index: 1000;
   }
 
-  .db_new {
+  &__new {
     margin-top: $db-header-height;
     padding: 1.5rem;
     background: #dadce0;
   }
 
-  .db_create{
+  &__create {
     width: 160px;
     height: 160px;
     background: #fff;
@@ -39,21 +39,21 @@
 
     &:hover {
       cursor: pointer;
-      color: lime;
-      border-color: lime;
+      color: green;
+      border-color: green;
     }
   }
 
-  .db_view{
+  &__view {
     max-width: 1000px;
     margin: 0 auto;
   }
 
-  .db_table {
+  &__table {
     padding: 1rem;
   }
 
-  .db_list-header{
+  &__list-header {
     display: flex;
     justify-content: space-between;
     color: #202124;
@@ -63,18 +63,18 @@
     padding: 0 12px;
   }
 
-  .db_list{
+  &__list {
     @include clear-list;
   }
 
-  .db_record{
+  &__record {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 14px 12px 16px;
     margin-bottom: 10px;
 
-    &:hover{
+    &:hover {
       background: #e6f4ea;
       border-radius: 25px;
     }
@@ -85,7 +85,7 @@
       color: #202124;
       font-size: 14px;
 
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
